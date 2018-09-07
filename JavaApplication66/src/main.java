@@ -55,6 +55,8 @@ public class main extends javax.swing.JFrame {
         tf_registrodescripcion = new javax.swing.JTextField();
         jButton4 = new javax.swing.JButton();
         js_registroedad = new javax.swing.JSpinner();
+        jLabel12 = new javax.swing.JLabel();
+        tf_registrointereses = new javax.swing.JTextField();
         jd_normales = new javax.swing.JDialog();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel2 = new javax.swing.JPanel();
@@ -113,58 +115,64 @@ public class main extends javax.swing.JFrame {
 
         js_registroedad.setModel(new javax.swing.SpinnerNumberModel(18, 18, null, 1));
 
+        jLabel12.setText("Intereses separados por coma");
+
         javax.swing.GroupLayout jd_registroLayout = new javax.swing.GroupLayout(jd_registro.getContentPane());
         jd_registro.getContentPane().setLayout(jd_registroLayout);
         jd_registroLayout.setHorizontalGroup(
             jd_registroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jd_registroLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jd_registroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel5)
+                    .addComponent(jLabel6))
+                .addGap(18, 18, 18)
                 .addGroup(jd_registroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jd_registroLayout.createSequentialGroup()
                         .addGroup(jd_registroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jd_registroLayout.createSequentialGroup()
-                                .addGap(202, 202, 202)
-                                .addComponent(jLabel4))
-                            .addGroup(jd_registroLayout.createSequentialGroup()
-                                .addContainerGap()
-                                .addGroup(jd_registroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel7)
-                                    .addComponent(jLabel8)
-                                    .addGroup(jd_registroLayout.createSequentialGroup()
-                                        .addComponent(jLabel9)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(tf_registrocontraseña, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(jd_registroLayout.createSequentialGroup()
-                                        .addComponent(jLabel10)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(tf_registrodescripcion, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 89, Short.MAX_VALUE))
+                            .addComponent(tf_registronombre, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(js_registroedad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel11)
+                        .addGap(42, 42, 42))
                     .addGroup(jd_registroLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(jd_registroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel5)
-                            .addComponent(jLabel6))
-                        .addGap(18, 18, 18)
-                        .addGroup(jd_registroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jd_registroLayout.createSequentialGroup()
-                                .addGroup(jd_registroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(tf_registronombre, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(js_registroedad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jLabel11)
-                                .addGap(42, 42, 42))
-                            .addGroup(jd_registroLayout.createSequentialGroup()
-                                .addGroup(jd_registroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(tf_registrousuario, javax.swing.GroupLayout.DEFAULT_SIZE, 115, Short.MAX_VALUE)
-                                    .addComponent(tf_registrosexo))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
+                        .addGroup(jd_registroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(tf_registrousuario, javax.swing.GroupLayout.DEFAULT_SIZE, 115, Short.MAX_VALUE)
+                            .addComponent(tf_registrosexo))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addGroup(jd_registroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton3))
                 .addContainerGap())
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jd_registroLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jButton4)
-                .addGap(125, 125, 125))
+                .addGroup(jd_registroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jd_registroLayout.createSequentialGroup()
+                        .addGap(202, 202, 202)
+                        .addComponent(jLabel4))
+                    .addGroup(jd_registroLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(jd_registroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel7)
+                            .addComponent(jLabel8)
+                            .addGroup(jd_registroLayout.createSequentialGroup()
+                                .addComponent(jLabel9)
+                                .addGap(18, 18, 18)
+                                .addComponent(tf_registrocontraseña, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jd_registroLayout.createSequentialGroup()
+                                .addComponent(jLabel10)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(tf_registrodescripcion, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 24, Short.MAX_VALUE)
+                .addGroup(jd_registroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jd_registroLayout.createSequentialGroup()
+                        .addComponent(jButton4)
+                        .addGap(123, 123, 123))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jd_registroLayout.createSequentialGroup()
+                        .addComponent(jLabel12)
+                        .addGap(53, 53, 53))
+                    .addGroup(jd_registroLayout.createSequentialGroup()
+                        .addComponent(tf_registrointereses, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap())))
         );
         jd_registroLayout.setVerticalGroup(
             jd_registroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -209,6 +217,10 @@ public class main extends javax.swing.JFrame {
                         .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(jButton3)
+                        .addGap(29, 29, 29)
+                        .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(tf_registrointereses, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addComponent(jButton4)
                 .addContainerGap())
@@ -362,6 +374,11 @@ public class main extends javax.swing.JFrame {
         au.cargarArchivo();
         au.setusuario(u);
         au.escribirArchivo();
+        String tempint=tf_registrointereses.getText();
+        String [] intereses=tempint.split(",");
+        for (int i = 0; i < intereses.length-1; i++) {
+            u.getIntereses().add(intereses[i]);
+        }
         JOptionPane.showMessageDialog(this,
                 "Se ha registrado!");
         tf_registronombre.setText("");
@@ -370,6 +387,10 @@ public class main extends javax.swing.JFrame {
         tf_registrosexo.setText("");
         tf_registrousuario.setText("");
         js_registroedad.setValue(18);
+        for (int i = 0; i < u.getIntereses().size(); i++) {
+            System.out.println(u.getIntereses().get(i));
+        }
+        tf_registrointereses.setText("");
     }//GEN-LAST:event_jButton4MouseClicked
 
     /**
@@ -415,6 +436,7 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -436,6 +458,7 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JSpinner js_registroedad;
     private javax.swing.JTextField tf_registrocontraseña;
     private javax.swing.JTextField tf_registrodescripcion;
+    private javax.swing.JTextField tf_registrointereses;
     private javax.swing.JTextField tf_registronombre;
     private javax.swing.JTextField tf_registrosexo;
     private javax.swing.JTextField tf_registrousuario;
